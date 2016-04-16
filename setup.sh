@@ -16,17 +16,20 @@
 sudo apt-get update
 
 # Installs the chrome browser
-sudo apt-get install chromium-browser
+sudo apt-get -y install chromium-browser
 
 # Installs C++ for the emulator
-sudo apt-get install lib32stdc++6
+sudo apt-get -y install lib32stdc++6
 
 # Library to allow the i386 emulator to run on x64 machines
-sudo apt-get install zlib1g:i386
+sudo apt-get -y install zlib1g:i386
 
 # Simpler command to start the emulator
 # Kills any running emulator and starts it afresh
-alias startemulator='sudo killall aiStarter ; sudo /usr/google/appinventor/commands-for-Appinventor/aiStarter &'
+cat "alias startemulator='sudo killall aiStarter ; sudo /usr/google/appinventor/commands-for-Appinventor/aiStarter &'" >> ~/.bashrc 
+
+# Reloads the bashrc to enable the new alias
+source ~/.bashrc
 
 # Fix for a bug with XFCE4 stability
 user="$USER"
