@@ -11,7 +11,7 @@ It will also create an alias to start the emulator `startemulator`
 
 ## Install:
 
-Will install all the above listed things.
+Will install all the above listed things. Run:
 
 ```shell
 sudo apt-get update
@@ -20,7 +20,7 @@ git clone https://github.com/mbacvanski/crouton-setup.git
 cd crouton-setup
 ./install
 ```
-When it asks you for your password, enter your root password. When it asks for Yes/No confirmation, answer like a respectable human. Once it is done setting up, you will be able to run:
+It may ask you for your root password. Once it is done setting up, you will be able to run:
 
 ```shell
 startemulator
@@ -30,7 +30,7 @@ to initialize the emulator background process. Before starting your emulator fro
 
 ## Uninstall:
 
-Will remove all the above listed things.
+Will remove all the above listed things. Run:
 
 ```shell
 cd crouton-setup # Or wherever else you put this repo
