@@ -24,6 +24,15 @@ sudo apt-get -y install lib32stdc++6
 # Library to allow the i386 emulator to run on x64 machines
 sudo apt-get -y install zlib1g:i386
 
+# Downloads the actual emulator
+wget http://appinv.us/aisetup_linux_deb -O appInventor.deb
+
+# Unpack and install the emulator
+sudo dpkg -i appInventor.deb
+
+# Remove the downloaded file
+rm -r appInventor.deb
+
 # Simpler command to start the emulator
 # Kills any running emulator and starts it afresh
 echo "alias startemulator='sudo killall aiStarter ; sudo /usr/google/appinventor/commands-for-Appinventor/aiStarter &'" >> ~/.bashrc 
