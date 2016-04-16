@@ -1,4 +1,5 @@
-# crouton-setup: 
+# MIT App Inventor Setup on Ubuntu/XFCE
+
 Looking for an easy way to setup Ubuntu/XFCE for MIT App Inventor? You're at the right place. This short script was designed to set up the default [Crouton](https://github.com/dnschneid/crouton) environment for MIT App Inventor.
 
 This was designed for Ubuntu 12.04.5 machines with XFCE 4.8 installed. It downloads necessary dependencies for MIT App Inventor's emulator and fixes a minor issue with XFCE stability. It will install these things:
