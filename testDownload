@@ -1,2 +1,0 @@
-wget http://appinv.us/aisetup_linux_deb -O linuxAiSetup.deb
-sudo dpkg -i linuxAiSetup.deb
