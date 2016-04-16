@@ -26,7 +26,7 @@ sudo apt-get -y install zlib1g:i386
 
 # Simpler command to start the emulator
 # Kills any running emulator and starts it afresh
-cat "alias startemulator='sudo killall aiStarter ; sudo /usr/google/appinventor/commands-for-Appinventor/aiStarter &'" >> ~/.bashrc 
+echo "alias startemulator='sudo killall aiStarter ; sudo /usr/google/appinventor/commands-for-Appinventor/aiStarter &'" >> ~/.bashrc 
 
 # Reloads the bashrc to enable the new alias
 source ~/.bashrc

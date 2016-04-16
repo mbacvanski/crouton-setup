@@ -25,7 +25,7 @@ sudo apt-get -y remove zlib1g:i386
 
 # Removes the last command from the bashrc, which should be the alias
 # to start the emulator. See setup.sh
-sed -i '$ d' ~/.bashrc
+# sed -i '$ d' ~/.bashrc
 
 # Reloads the bashrc to reflect changes to alias
 source ~/.bashrc
