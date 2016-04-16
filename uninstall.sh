@@ -23,9 +23,15 @@ sudo apt-get -y remove lib32stdc++6
 # Removes the library to allow the i386 emulator to run on x64 machines
 sudo apt-get -y remove zlib1g:i386
 
+# Uninstalls the emulator itself
+sudo dpkg -r appinventor2-setup
+
+# Removes unneeded dependencies
+sudo apt-get -y autoremove
+
 # Removes the last command from the bashrc, which should be the alias
 # to start the emulator. See setup.sh
-# sed -i '$ d' ~/.bashrc
+sed -i '$ d' ~/.bashrc
 
 # Reloads the bashrc to reflect changes to alias
 source ~/.bashrc
