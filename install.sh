@@ -37,9 +37,9 @@ rm -r appInventor.deb
 # Kills any running emulator and starts it afresh
 echo "alias startemulator='sudo killall aiStarter ; sudo /usr/google/appinventor/commands-for-Appinventor/aiStarter &'" >> ~/.bashrc 
 
-# Reloads the bashrc to enable the new alias
-source ~/.bashrc
-
 # Fix for a bug with XFCE4 stability
 user="$USER"
 sudo chown $user:users /home/$user/.Xauthority
+
+# Reloads the bashrc to enable the new alias
+source ~/.bashrc
