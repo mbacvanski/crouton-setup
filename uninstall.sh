@@ -26,6 +26,9 @@ sudo apt-get -y remove zlib1g:i386
 # Uninstalls the emulator itself
 sudo dpkg -r appinventor2-setup
 
+# Uninstalls unzip tool
+sudo apt-get -y remove unzip
+
 # Removes unneeded dependencies
 sudo apt-get -y autoremove
 
