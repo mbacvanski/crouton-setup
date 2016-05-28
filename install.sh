@@ -24,6 +24,9 @@ sudo apt-get -y install lib32stdc++6
 # Library to allow the i386 emulator to run on x64 machines
 sudo apt-get -y install zlib1g:i386
 
+# Unizpping utility
+sudo apt-get -y install unzip
+
 # Downloads the actual emulator
 wget http://appinv.us/aisetup_linux_deb -O appInventor.deb
 
